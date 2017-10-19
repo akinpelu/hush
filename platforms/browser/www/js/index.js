@@ -47,3 +47,19 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
+
+
+var stealth = {
+    initialize: function() {
+        var monthNames = ["January", "February", "March", "April", "May", "June",
+            "July", "August", "September", "October", "November", "December"
+        ];
+        var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+        var d = new Date();
+
+        var stringDate =
+
+        $('.date').html(days[d.getDay()] + ' ' + d.getDay() + 'th ' + monthNames[d.getMonth()]);
+    }
+}
