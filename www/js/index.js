@@ -58,8 +58,6 @@ var stealth = {
 
         var d = new Date();
 
-        var stringDate =
-
         $('.date').html(days[d.getDay()] + ' ' + d.getDay() + 'th ' + monthNames[d.getMonth()]);
     }
-}
+};

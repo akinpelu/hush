@@ -117,11 +117,13 @@ h1 {
 .stealth {
     height: 100vh;
     width: 100vw;
-    background: black;
+    background: #292836;
 }
 
 .stealth h1,
-.stealth p {
+.stealth p,
+.stealth * {
+    text-transform: none;
     padding-top: 2em;
     color: white;
     text-align: center;
