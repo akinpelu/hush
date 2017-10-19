@@ -16,6 +16,9 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,700');
+
 * {
     -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
@@ -31,8 +34,12 @@ body {
     background-color: #F5F5F5;
 }
 
+body * {
+    font-family: 'Rubik', sans-serif;
+}
+
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
-    
+
 }
 
 h1 {
@@ -157,7 +164,7 @@ button {
     top: 100px;
     z-index: 4;
     background-color: rgba(255,255,255,.8);
-    
+
 }
 
 .hidden-container {
@@ -219,13 +226,13 @@ button {
     50% { opacity: 0.4; }
     to { opacity: 1.0; }
 }
- 
+
 @-webkit-keyframes fade {
     from { opacity: 1.0; }
     50% { opacity: 0.4; }
     to { opacity: 1.0; }
 }
- 
+
 .blink {
     animation: fade 3000ms infinite;
     -webkit-animation: fade 3000ms infinite;
@@ -307,4 +314,91 @@ body.stealth__body {
 
 canvas {
     margin: 0 auto;
+}
+
+/** Settings Page **/
+
+.settings__container h4 {
+    color: red;
+}
+
+.settings__container div {
+    margin: 2em 1em;
+}
+
+.settings__container div.settings__privacy {
+    margin: 0;
+}
+
+.settings__privacy h3 {
+    width: 100%;
+    background: #FFAA14;
+    padding: 0.5em;
+    color: #FFFFFF;
+}
+
+.settings__privacy h3 span {
+    font-size: 0.6em;
+}
+
+.settings__title a {
+    position: absolute;
+    left: 0.5em;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    display:none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
 }
