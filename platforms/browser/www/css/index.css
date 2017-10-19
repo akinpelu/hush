@@ -252,6 +252,7 @@ body.stealth__body {
 }
 
 .stealth h1 {
+    background: none;
     text-transform: none;
     text-align: center;
     color: #FFFFFF;
