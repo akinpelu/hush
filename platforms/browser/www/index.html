@@ -36,56 +36,273 @@
     * Create your own at http://cspisawesome.com
     -->
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *"> -->
+	<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,700" rel="stylesheet">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/index.css">
-    <title>Hello World</title>
+    <title>hush</title>
 </head>
 
 <body>
     <div class="app">
-        <header>
-            <h1>hush</h1>
-        </header>
+    	<div class="header">
+	    	<h1 class="text-center">
+	    		<img src="img/logo.svg" alt="hush">
+	    	</h1>
 
-        <div class="container">
-        	<h3>Tabs</h3>
-        	<ul class="nav nav-tabs nav-justified">
-        		<li class="active">
-        			<a data-toggle="tab" href="#available">Available</a>
-        		</li>
-        		<li>
-        			<a data-toggle="tab" href="#hidden">Hidden</a>
-        		</li>
-        	</ul>
+	    	<ul class="nav nav-tabs">
+	    		<li class="active">
+	    			<a data-toggle="tab" href="#available">Available</a>
+	    		</li>
+	    		<li>
+	    			<a data-toggle="tab" href="#hidden">Hidden</a>
+	    		</li>
+	    	</ul>
+    	</div>
 
-        	<div class="tab-content">
-        		<div id="available" class="tab-pane fade in active">
-        			<div class="col-xs-6">
-	        			<h3>title</h3>
-	        			<p>content</p>
-        			</div>
+    	<div class="tab-content">
+    		<div id="available" class="tab-pane fade in active">
+    			<div class="col-xs-6 profile-container">
+	    			<div class="profile">
+	        			<div class="profile-image">
+	        				<button type="button" class="btn-close">
+	        					<img src="img/close.svg" alt="close">
+	        				</button>
 
-        			<div class="col-xs-6">
-	        			<h3>title</h3>
-	        			<p>content</p>
-        			</div>
-        		</div>
+	        				<img src="img/kate.png" alt="profile-pic">
 
-        		<div id="hidden" class="tab-pane fade">
-        			<div class="col-xs-6">
-	        			<h3>title</h3>
-	        			<p>content</p>
-        			</div>
-        			
-        			<div class="col-xs-6">
-	        			<h3>title</h3>
-	        			<p>content</p>
-        			</div>
-        		</div>
-        	</div>
-        </div>
+							<div class="profile-info">
+								<p class="profile-name">Kate</p>
+								<p class="profile-details">22 | 4 miles away</p>
+							</div>
+	        			</div>
+
+	        			<div class="profile-action">
+	        				<button type="button">
+	        					<img src="img/heart.svg" alt="choice 1">
+	        				</button type="button">
+
+	        				<button type="button">
+	        					<img src="img/light.svg" alt="choice 2">
+	        				</button type="button">
+	        			</div>
+	    			</div>
+	    		</div>
+
+    			<div class="col-xs-6 profile-container">
+    				<div class="profile">
+	        			<div class="profile-image profile-long">
+	        				<button type="button" class="btn-close">
+	        					<img src="img/close.svg" alt="close">
+	        				</button>
+
+	        				<img src="img/maria.png" alt="profile-pic">
+
+							<div class="profile-info">
+								<p class="profile-name">Maria</p>
+								<p class="profile-details">14 | 17 miles away</p>
+							</div>
+	        			</div>
+
+	        			<div class="profile-message">
+	        				<button type="button">
+	        					<img src="img/message.svg" alt="choice 1">
+	        					<span>Message Her</span>
+	        				</button>
+	        			</div>
+	    			</div>
+    			</div>
+
+    			<div class="col-xs-6 profile-container">
+	    			<div class="profile">
+	        			<div class="profile-image">
+	        				<button type="button" class="btn-close">
+	        					<img src="img/close.svg" alt="close">
+	        				</button>
+
+	        				<img src="img/kate.png" alt="profile-pic">
+
+							<div class="profile-info">
+								<p class="profile-name">Kate</p>
+								<p class="profile-details">22 | 4 miles away</p>
+							</div>
+	        			</div>
+
+	        			<div class="profile-action">
+	        				<button type="button">
+	        					<img src="img/heart.svg" alt="choice 1">
+	        				</button type="button">
+
+	        				<button type="button">
+	        					<img src="img/light.svg" alt="choice 2">
+	        				</button type="button">
+	        			</div>
+	    			</div>
+	    		</div>
+
+    			<div class="col-xs-6 profile-container">
+    				<div class="profile">
+	        			<div class="profile-image profile-long">
+	        				<button type="button" class="btn-close">
+	        					<img src="img/close.svg" alt="close">
+	        				</button>
+
+	        				<img src="img/maria.png" alt="profile-pic">
+
+							<div class="profile-info">
+								<p class="profile-name">Maria</p>
+								<p class="profile-details">14 | 17 miles away</p>
+							</div>
+	        			</div>
+
+	        			<div class="profile-message">
+	        				<button type="button">
+	        					<img src="img/message.svg" alt="choice 1">
+	        					<span>Message Her</span>
+	        				</button>
+	        			</div>
+	    			</div>
+    			</div>
+    		</div>
+
+    		<div id="hidden" class="tab-pane fade">
+    			<div class="hidden-overlay">
+    				<div class="hidden-container">
+    					<p>Right now, Hush is hiding from you:</p>
+
+	    				<p class="num-hidden">24</p>
+
+	    				<p>profiles according to your settings! Your privacy is our top concern</p>
+
+		    			<button type="button" class="btn btn-update">Update Settings</button>
+    				</div>
+    			</div>
+
+    			<div class="hidden-filter">
+    				<div class="col-xs-6 profile-container">
+		    			<div class="profile">
+		        			<div class="profile-image">
+		        				<button type="button" class="btn-close">
+		        					<img src="img/close.svg" alt="close">
+		        				</button>
+
+		        				<img src="img/kate.png" alt="profile-pic">
+
+								<div class="profile-info">
+									<p class="profile-name">Kate</p>
+									<p class="profile-details">22 | 4 miles away</p>
+								</div>
+		        			</div>
+
+		        			<div class="profile-action">
+		        				<button type="button">
+		        					<img src="img/heart.svg" alt="choice 1">
+		        				</button type="button">
+
+		        				<button type="button">
+		        					<img src="img/light.svg" alt="choice 2">
+		        				</button type="button">
+		        			</div>
+		    			</div>
+		    		</div>
+
+	    			<div class="col-xs-6 profile-container">
+	    				<div class="profile">
+		        			<div class="profile-image profile-long">
+		        				<button type="button" class="btn-close">
+		        					<img src="img/close.svg" alt="close">
+		        				</button>
+
+		        				<img src="img/maria.png" alt="profile-pic">
+
+								<div class="profile-info">
+									<p class="profile-name">Maria</p>
+									<p class="profile-details">14 | 17 miles away</p>
+								</div>
+		        			</div>
+
+		        			<div class="profile-message">
+		        				<button type="button">
+		        					<img src="img/message.svg" alt="choice 1">
+		        					<span>Message Her</span>
+		        				</button>
+		        			</div>
+		    			</div>
+	    			</div>
+    				<div class="col-xs-6 profile-container">
+		    			<div class="profile">
+		        			<div class="profile-image">
+		        				<button type="button" class="btn-close">
+		        					<img src="img/close.svg" alt="close">
+		        				</button>
+
+		        				<img src="img/kate.png" alt="profile-pic">
+
+								<div class="profile-info">
+									<p class="profile-name">Kate</p>
+									<p class="profile-details">22 | 4 miles away</p>
+								</div>
+		        			</div>
+
+		        			<div class="profile-action">
+		        				<button type="button">
+		        					<img src="img/heart.svg" alt="choice 1">
+		        				</button type="button">
+
+		        				<button type="button">
+		        					<img src="img/light.svg" alt="choice 2">
+		        				</button type="button">
+		        			</div>
+		    			</div>
+		    		</div>
+
+	    			<div class="col-xs-6 profile-container">
+	    				<div class="profile">
+		        			<div class="profile-image profile-long">
+		        				<button type="button" class="btn-close">
+		        					<img src="img/close.svg" alt="close">
+		        				</button>
+
+		        				<img src="img/maria.png" alt="profile-pic">
+
+								<div class="profile-info">
+									<p class="profile-name">Maria</p>
+									<p class="profile-details">14 | 17 miles away</p>
+								</div>
+		        			</div>
+
+		        			<div class="profile-message">
+		        				<button type="button">
+		        					<img src="img/message.svg" alt="choice 1">
+		        					<span>Message Her</span>
+		        				</button>
+		        			</div>
+		    			</div>
+	    			</div>
+    			</div>
+    		</div>
+    	</div>
+
+    	<div class="nav-container">
+    		<div class="nav">
+    			<img src="" alt="">
+    			<img src="" alt="">
+    			<img src="" alt="">
+    			<img src="" alt="">
+    			<img src="" alt="">
+    		</div>
+    	</div>
+    </div>
+
+    <div id="limit-reached" class="limit-box" hidden>
+    	<div class="limit-container">
+    		<button type="button" class="close-limit"><img src="img/close-dark.svg" alt="close"></button>
+
+	    	<p class="limit-text">You've reached your Daily Profile Allowance. You can view more profiles in 24 hours, or</p>
+
+	    	<button type="button" class="btn btn-upgrade">Upgrade</button>
+    	</div>
     </div>
 
     <script type="text/javascript" src="cordova.js"></script>
@@ -95,6 +312,19 @@
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
         app.initialize();
+
+        $(function() {
+        	$('.profile-action button, .profile-message button').click(function() {
+	        	$('#limit-reached').fadeIn();
+	        });
+        	$('.close-limit').click(function() {
+	        	$('#limit-reached').fadeOut();
+	        });
+
+        	$('.btn-close').click(function() {
+	        	$(this).parent().parent().fadeOut();
+	        });
+        });
     </script>
 </body>
 

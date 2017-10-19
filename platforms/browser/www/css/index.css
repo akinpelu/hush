@@ -24,9 +24,11 @@ body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    font-family: 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-family: 'Rubik', sans-serif;
     margin: 0;
     padding: 0;
+    letter-spacing: 0.6px;
+    background-color: #F5F5F5;
 }
 
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
@@ -34,12 +36,163 @@ body {
 }
 
 h1 {
-    font-size:24px;
-    font-weight:normal;
     margin: 0;
-    overflow:visible;
-    padding: 0;
-    text-align:center;
+    padding: 10px 0;
+    background-color: #E01E33;
+    font-size: 24px;
+    font-weight: normal;
+    color: #fff;
+}
+
+button {
+    letter-spacing: 0.6px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    border-bottom: 3px solid #E01E33;
+}
+
+.tab-content {
+    width: 97%;
+    margin: 105px auto 10px;
+}
+
+.profile-container {
+    padding: 0 5px;
+}
+
+.profile {
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #aaa;
+}
+
+.profile-image > img {
+    display: block;
+    width: 100%;
+}
+
+.btn-close {
+    position: absolute;
+    right: 7px;
+}
+
+.profile-info {
+    position: absolute;
+    bottom: 45px;
+    padding: 0 7px;
+    font-size: 13px;
+    text-shadow: 0 0 2px #000;
+    color: #fff;
+}
+
+.profile-info p {
+    margin: 0;
+}
+
+.profile-details {
+    font-size: 10px;
+    font-weight: 100;
+}
+
+.profile-action {
+    display: flex;
+}
+
+.profile-action > button,
+.profile-message > button {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.profile-action > button {
+    width: 50%;
+    border: 0;
+    background-color: #fff;
+    outline: 0;
+    border-radius: 5px;
+}
+
+.profile-action > button:first-child {
+    border-right: 1px solid #ddd;
+}
+
+/* .profile-action > button:last-child {
+    border-left: 1px solid #ddd;
+} */
+
+.btn {
+    padding: 10px 30px;
+    border: 0;
+    border-radius: 50px;
+    background-color: #00C0FF;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff;
+    outline: none;
+}
+
+.limit-box,
+.hidden-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.hidden-filter {
+    filter: blur(10px);
+}
+
+.hidden-overlay {
+    position: absolute;
+    top: 100px;
+    z-index: 4;
+    background-color: rgba(255,255,255,.8);
+    
+}
+
+.hidden-container {
+    width: 70%;
+    margin: 50px auto 0;
+    text-align: center;
+}
+
+.hidden-container p {
+    font-size: 16px;
+}
+
+.hidden-container .num-hidden {
+    line-height: 1;
+    font-size: 120px;
+    color: #E01E33;
+}
+
+.btn-update {
+    margin-top: 20px;
+}
+
+.limit-container {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-40%);
+    left: 0;
+    right: 0;
+    width: 70%;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 10px 10px 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: center;
 }
 
 .event {
