@@ -78,17 +78,79 @@ h1 {
     -webkit-animation: fade 3000ms infinite;
 }
 
+
+
+/** Stealth Page **/
+
+body.stealth__body {
+    background: #292836;
+}
 .stealth {
-    height: 100vh;
-    width: 100vw;
+    height: 98vh;
+    width: 98vw;
+}
+
+.stealth .container {
     background: #292836;
 }
 
-.stealth h1,
-.stealth p,
 .stealth * {
+    color: #B3AFAF;
+}
+
+.stealth h1 {
     text-transform: none;
-    padding-top: 2em;
-    color: white;
     text-align: center;
+    color: #FFFFFF;
+    padding: 2em 0 0.5em;
+}
+
+.stealth p {
+    text-transform: none;
+    text-align: center;
+    padding-bottom: 1em;
+    color: #B3AFAF;
+}
+
+.row:first-child {
+    margin-bottom: 2em;
+}
+
+.row:last-child {
+    margin-top: 1em;
+}
+
+.doughnut__label {
+    padding: 0;
+    margin: 0 auto;
+    width: 25%;
+}
+
+.doughnut__value {
+    position: absolute;
+    top: 32%;
+    left: 40%;
+    color: #FFFFFF;
+    font-size: 1.2em;
+}
+
+.time__value {
+    color: #FFFFFF;
+    font-size: 1.1em;
+    padding: 1em;
+}
+
+.stealth button {
+    text-align: center;
+    border-radius: 1.5em;
+    width: 130px;
+    margin: 3em auto;
+    position: relative;
+    display: block;
+    color: #FFFFFF;
+    padding: 1em 2em;
+}
+
+canvas {
+    margin: 0 auto;
 }
