@@ -359,26 +359,36 @@ canvas {
 
 /** Settings Page **/
 
+.settings__container {
+    padding: 1em;
+    margin-top: 3em;
+}
+
 .settings__container h4 {
     color: red;
 }
 
 .settings__container div {
     margin: 2em 1em;
+    background: #FFFFFF;
+    border-radius: 0.5em;
 }
 
 .settings__container div.settings__privacy {
     margin: 0;
+    padding: 0.5em 0.5em;
 }
 
-.settings__privacy h3 {
+.settings__container h3 {
     width: 100%;
     background: #FFAA14;
     padding: 0.5em;
     color: #FFFFFF;
+    border-radius: 0.3em 0.3em 0 0;
+    margin: 0;
 }
 
-.settings__privacy h3 span {
+.settings__container h3 span {
     font-size: 0.6em;
 }
 
