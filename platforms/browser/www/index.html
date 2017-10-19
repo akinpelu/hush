@@ -39,16 +39,52 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="css/index.css">
     <title>Hello World</title>
 </head>
 
 <body>
     <div class="app">
-        <h1>PhoneGap</h1>
-        <div id="deviceready" class="blink">
-            <p class="event listening">Connecting to Device</p>
-            <p class="event received">Device is Ready</p>
+        <header>
+            <h1>hush</h1>
+        </header>
+
+        <div class="container">
+        	<h3>Tabs</h3>
+        	<ul class="nav nav-tabs nav-justified">
+        		<li class="active">
+        			<a data-toggle="tab" href="#available">Available</a>
+        		</li>
+        		<li>
+        			<a data-toggle="tab" href="#hidden">Hidden</a>
+        		</li>
+        	</ul>
+
+        	<div class="tab-content">
+        		<div id="available" class="tab-pane fade in active">
+        			<div class="col-xs-6">
+	        			<h3>title</h3>
+	        			<p>content</p>
+        			</div>
+
+        			<div class="col-xs-6">
+	        			<h3>title</h3>
+	        			<p>content</p>
+        			</div>
+        		</div>
+
+        		<div id="hidden" class="tab-pane fade">
+        			<div class="col-xs-6">
+	        			<h3>title</h3>
+	        			<p>content</p>
+        			</div>
+        			
+        			<div class="col-xs-6">
+	        			<h3>title</h3>
+	        			<p>content</p>
+        			</div>
+        		</div>
+        	</div>
         </div>
     </div>
 
