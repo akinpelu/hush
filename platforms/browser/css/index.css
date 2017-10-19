@@ -395,6 +395,15 @@ canvas {
     padding: 0.5em 0.5em;
 }
 
+.settings__location button {
+    font-size: 0.7em;
+    background: white;
+    border: 1px solid #B3AFAF;
+    float: right;
+    position: relative;
+    top: -20px;
+}
+
 .settings__privacy > div,
 .settings__notifications > div {
     position: relative;
