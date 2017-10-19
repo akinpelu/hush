@@ -48,6 +48,24 @@ var app = {
     }
 };
 
+$(function() {
+    $('.profile-action button').click(function() {
+        $(this).parent().hide();
+        $(this).parent().siblings('.profile-message').fadeIn();
+    });
+
+    $('.profile-message button').click(function() {
+        $('#limit-reached').fadeIn();
+    });
+
+    $('.close-limit').click(function() {
+        $('#limit-reached').fadeOut();
+    });
+
+    $('.btn-close').click(function() {
+        $(this).parent().parent().parent().remove();
+    });
+});
 
 var stealth = {
     initialize: function() {
