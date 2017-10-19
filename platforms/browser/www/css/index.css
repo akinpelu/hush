@@ -379,6 +379,10 @@ canvas {
     padding: 0.5em 0.5em;
 }
 
+.settings__privacy > div {
+    position: relative;
+}
+
 .settings__container h3 {
     width: 100%;
     background: #FFAA14;
@@ -398,10 +402,11 @@ canvas {
 }
 
 .switch {
-    position: relative;
     display: inline-block;
     width: 60px;
     height: 34px;
+    position: absolute;
+    right: 0;
 }
 
 .switch input {
@@ -433,11 +438,11 @@ canvas {
 }
 
 input:checked + .slider {
-    background-color: #2196F3;
+    background-color: #E01E33;
 }
 
 input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px #E01E33;
 }
 
 input:checked + .slider:before {
@@ -453,3 +458,4 @@ input:checked + .slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
+

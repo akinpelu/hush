@@ -16,52 +16,57 @@
 </head>
 
 <body>
-    <div class="header">
-        <h1 class="text-center settings__title"><a href="index.html"><img src="/img/back-arrow.svg"/></a>Settings</h1>
-    </div>
-    <div class="settings__container">
-        <h4>I want to see:</h4>
-        <div class="settings__gender">
-            <div class="dropdown">
-                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    Women
-                    <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <li><a href="#">Women</a></li>
-                    <li><a href="#">Men</a></li>
-                </ul>
-            </div>
+<div class="header">
+    <h1 class="text-center settings__title"><a href="index.html"><img src="/img/back-arrow.svg"/></a>Settings</h1>
+</div>
+<div class="settings__container">
+    <h4>I want to see:</h4>
+    <div class="settings__gender">
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Women
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Men</a></li>
+            </ul>
         </div>
+    </div>
 
-        <h3>Privacy - <span>it's what we do best</span></h3>
-        <div class="settings__privacy">
-            <h4>I DON'T want to see/be shown to</h4>
+    <h3>Privacy - <span>it's what we do best</span></h3>
+    <div class="settings__privacy">
+        <h4>I DON'T want to see/be shown to</h4>
+        <div>
+            Facebook friends
             <label class="switch" for="facebook">
-                Facebook friends
-                <span class="slider round"></span>
                 <input id="facebook" type="checkbox">
-            </label>
-
-            <label class="switch" for="common">
-                Friends in common
                 <span class="slider round"></span>
+            </label>
+        </div>
+
+        <div>
+            Friends in common
+            <label class="switch" for="common">
+
                 <input id="common" type="checkbox">
-            </label>
-
-            <label for="people">
-                People within <span>10</span> metres of Facebook friends and friends in common
-                <input id="people" type="range" value="50" min="0" max="100" step="10" />
+                <span class="slider round"></span>
             </label>
         </div>
 
-        <h4>Search Distance:</h4>
-        <div class="settings__distance">
-            <label for="distance">
-                <input id="distance" type="range" value="50" min="0" max="100" step="10" />
-            </label>
-        </div>
+        <label for="people">
+            People within <span>10</span> metres of Facebook friends and friends in common
+            <input id="people" type="range" value="50" min="0" max="100" step="10" />
+        </label>
     </div>
+
+    <h4>Search Distance:</h4>
+    <div class="settings__distance">
+        <label for="distance">
+            <input id="distance" type="range" value="50" min="0" max="100" step="10" />
+        </label>
+    </div>
+</div>
 
 </div>
 
