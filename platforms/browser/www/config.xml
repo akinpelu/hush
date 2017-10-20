@@ -8,7 +8,7 @@
     </feature>
     <name>hush</name>
     <description>
-        hush. FIND SOMEONE… NEW
+        FIND SOMEONE… NEW
     </description>
     <author email="james_lee82@hotmail.com" href="http://hush.com">
         Jamie Lee
@@ -25,4 +25,6 @@
     <allow-intent href="geo:*" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14" />
+    <preference name="SplashScreenDelay" value="0" />
+    <preference name="FadeSplashScreenDuration" value="0" />
 </widget>

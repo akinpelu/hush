@@ -49,25 +49,25 @@ var app = {
 };
 
 $(function() {
-    $('#hidden-toggle').on('click', function() {
+    $(document).on('click', '#hidden-toggle, #toggle-spotlight', function() {
         $('[data-toggle="popover"]').popover('hide');
         $('#limit-reached').hide();
     });
 
-    $('.profile-action button').on('click', function() {
+    $(document).on('click', '.profile-action button', function() {
         $(this).parent().hide();
         $(this).parent().siblings('.profile-message').fadeIn();
     });
 
-    $('.profile-message button').on('click', function() {
+    $(document).on('click', '.profile-message button', function() {
         $('#limit-reached').fadeIn();
     });
 
-    $('#close-limit').on('click', function() {
+    $(document).on('click', '#close-limit', function() {
         $('#limit-reached').fadeOut();
     });
 
-    $('.btn-close').on('click', function() {
+    $(document).on('click', '.btn-close', function() {
         $(this).parent().parent().parent().remove();
     });
 
@@ -75,6 +75,11 @@ $(function() {
     $("[data-toggle='popover']").on('show.bs.popover', function(){
         $('#spotlight').show();
     });
+
+    // window.plugins.nativepagetransitions.slide({
+    //     // the defaults for direction, duration, etc are all fine
+    //     "href" : "settings.html"
+    // });
 });
 
 var stealth = {
@@ -91,7 +96,7 @@ var stealth = {
 
         var d = new Date();
 
-        $('.date').html(days[d.getDay()] + ' ' + d.getDay() + 'th ' + monthNames[d.getMonth()]);
+        $('.date').html(days[d.getDay()] + ' ' + monthNames[d.getMonth()] + ' ' + d.getDate());
     },
     loadRandomTimes: function() {
         for (var i = 0; i < 4; i++) {
@@ -258,35 +263,3 @@ var stealth = {
         });
     }
 };
-
-
-
-$( "#slider-distance-fb" ).slider({
-     range: "min",
-  min: 0,
-  max: 50,
-  value: 10,
-  slide: function( event, ui ) {
-    $( ".settings__privacy-ranger > span" ).text( ui.value );
-  }
-});
-
-$( "#slider-distance" ).slider({
-    range: "min",
-  min: 0,
-  max: 50,
-  value: 25,
-  slide: function( event, ui ) {
-    $( "#distance-value" ).text( ui.value + 'km' );
-  }
-});
-
-$( "#slider-age" ).slider({
-  range: true,
-  min: 18,
-  max: 90,
-  values: [ 18, 39 ],
-  slide: function( event, ui ) {
-    $( "#age-values" ).text( ui.values[ 0 ] + "-" + ui.values[ 1 ] );
-  }
-});

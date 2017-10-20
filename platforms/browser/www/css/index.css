@@ -185,6 +185,19 @@ button {
     box-shadow: 0 0 5px #aaa;
 }
 
+.profile-image {
+    position: relative;
+}
+
+.pro-img-overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    background: linear-gradient(transparent 75%, rgba(0,0,0,0.6));
+}
+
 .profile-image > img {
     display: block;
     width: 100%;
@@ -197,10 +210,10 @@ button {
 
 .profile-info {
     position: absolute;
-    bottom: 45px;
+    bottom: 5px;
     padding: 0 7px;
     font-size: 13px;
-    text-shadow: 0 0 2px #000;
+    font-weight: 300;
     color: #fff;
 }
 
@@ -245,7 +258,7 @@ button {
 } */
 
 .profile-message button {
-    /* padding: 8px 0; */
+    padding: 13px 0;
     background-color: #fff;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -256,6 +269,7 @@ button {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 4;
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,0.4);
@@ -314,9 +328,12 @@ button {
 }
 
 .close-limit {
-    margin-top: 5px;
+    display: block;
+    margin-top: 20px;
     font-size: 10px;
-    font-weight: 300;
+    font-weight: 400;
+    text-decoration: underline;
+    color: #000;
     cursor: pointer;
 }
 
@@ -339,7 +356,7 @@ button {
 }
 
 .spotlight {
-    padding: 25px 0 40px;
+    padding: 25px 0;
 }
 
 .spotlight h2 {
