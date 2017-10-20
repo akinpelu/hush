@@ -17,9 +17,8 @@
 
 <body>
     <div class="header">
-        <h1 class="text-center settings__title"><a href="landing.html"><img src="/img/back-arrow.svg"/></a>Settings</h1>
+        <h1 class="text-center settings__title"><a href="lander.html"><img src="/img/back-arrow.svg"/></a>Settings</h1>
     </div>
-
     <div class="settings__container">
         <h4>I want to see:</h4>
         <div class="settings__gender">
@@ -35,137 +34,106 @@
             </div>
         </div>
 
+        <h4>Who are:</h4>
+        <div class="settings__gender">
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    married
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a href="#">Married</a></li>
+                    <li><a href="#">Single</a></li>
+                </ul>
+            </div>
+        </div>
+
         <h3>Privacy - <span>it's what we do best</span></h3>
         <div class="settings__privacy">
             <h4>I DON'T want to see/be shown to</h4>
             <div>
                 Facebook friends
-                <label class="switch" for="facebook">
-                    <input id="facebook" type="checkbox">
+                <label class="switch" for="facebook_friends">
+                    <input id="facebook_friends" type="checkbox">
                     <span class="slider round"></span>
                 </label>
             </div>
 
             <div>
                 Friends in common
-                <label class="switch" for="common">
-
-                    <input id="common" type="checkbox">
+                <label class="switch" for="friends_in_common">
+                    <input id="friends_in_common" type="checkbox">
                     <span class="slider round"></span>
                 </label>
             </div>
-
-            <label for="people">
+            <div class="settings__privacy-ranger">
                 People within <span>10</span> metres of Facebook friends and friends in common
-                <input id="people" type="range" value="50" min="0" max="100" step="10" />
-            </label>
+                <label for="search_ratio">
+                    <input id="search_ratio" class="ranger" type="range" value="50" min="0" max="100" step="10" />
+                </label>
+            </div>
+        </div>
+
+        <h4>Location</h4>
+        <div class="settings__location">
+            My Current Location<br>
+            Rochester, New York
+            <button type="button" class="btn">
+                PLANNING A TRIP?<br>
+                ADD/CHANGE LOCATION
+            </button>
         </div>
 
         <h4>Search Distance:</h4>
         <div class="settings__distance">
-            <label for="distance">
-                <input id="distance" type="range" value="50" min="0" max="100" step="10" />
-            </label>
-        </div>
-    </div>
-
-    <h4>Who are:</h4>
-    <div class="settings__gender">
-        <div class="dropdown">
-            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                married
-                <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                <li><a href="#">Married</a></li>
-                <li><a href="#">Single</a></li>
-            </ul>
-        </div>
-    </div>
-
-    <h3>Privacy - <span>it's what we do best</span></h3>
-    <div class="settings__privacy">
-        <h4>I DON'T want to see/be shown to</h4>
-        <div>
-            Facebook friends
-            <label class="switch" for="facebook_friends">
-                <input id="facebook_friends" type="checkbox">
-                <span class="slider round"></span>
-            </label>
-        </div>
-
-        <div>
-            Friends in common
-            <label class="switch" for="friends_in_common">
-                <input id="friends_in_common" type="checkbox">
-                <span class="slider round"></span>
-            </label>
-        </div>
-        <div class="settings__privacy-ranger">
-            People within <span>10</span> metres of Facebook friends and friends in common
             <label for="search_ratio">
                 <input id="search_ratio" class="ranger" type="range" value="50" min="0" max="100" step="10" />
             </label>
         </div>
-    </div>
 
-    <h4>Location</h4>
-    <div class="settings__location">
-        My Current Location<br>
-        Rochester, New York
-        <button type="button" class="btn">
-            PLANNING A TRIP?<br>
-            ADD/CHANGE LOCATION
-        </button>
-    </div>
-
-    <h4>Search Distance:</h4>
-    <div class="settings__distance">
-        <label for="search_ratio">
-            <input id="search_ratio" class="ranger" type="range" value="50" min="0" max="100" step="10" />
-        </label>
-    </div>
-
-    <h4>Age Range</h4>
-    <div class="settings__age">
-        <label for="age_range">
-            <input id="age_range" class="ranger" type="range" value="50" min="0" max="100" step="10" />
-        </label>
-    </div>
-
-    <h4>Notifications</h4>
-    <div class="settings__notifications">
-        <div>
-            New matches
-            <label class="switch" for="new_match">
-                <input id="new_match" type="checkbox">
-                <span class="slider round"></span>
+        <h4>Age Range</h4>
+        <div class="settings__age">
+            <label for="age_range">
+                <input id="age_range" class="ranger" type="range" value="50" min="0" max="100" step="10" />
             </label>
         </div>
 
-        <div>
-            Messages
-            <label class="switch" for="messages">
-                <input id="messages" type="checkbox">
-                <span class="slider round"></span>
-            </label>
-        </div>
+        <h4>Notifications</h4>
+        <div class="settings__notifications">
+            <div>
+                New matches
+                <label class="switch" for="new_match">
+                    <input id="new_match" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
 
-        <div>
-            Arrows
-            <label class="switch" for="arrows">
-                <input id="arrows" type="checkbox">
-                <span class="slider round"></span>
-            </label>
-        </div>
+            <div>
+                Messages
+                <label class="switch" for="messages">
+                    <input id="messages" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
 
-        <div>
-            Notes
-            <label class="switch" for="notes">
-                <input id="notes" type="checkbox">
-                <span class="slider round"></span>
-            </label>
+            <div>
+                Arrows
+                <label class="switch" for="arrows">
+                    <input id="arrows" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+
+            <div>
+                Notes
+                <label class="switch" for="notes">
+                    <input id="notes" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
         </div>
+    </div>
+
     </div>
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
