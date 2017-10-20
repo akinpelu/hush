@@ -1,9 +1,9 @@
 {
-  "name": "My App",
-  "description": "Description of your app",
+  "name": "hush",
+  "description": "FIND SOMEONE… NEW",
   "launch_path": "/index.html",
   "icons": {
-    "128": "/img/logo.png"
+    "128": "/img/icon.png"
   },
   "default_locale": "en",
   "type": "privileged"

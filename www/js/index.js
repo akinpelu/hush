@@ -49,21 +49,31 @@ var app = {
 };
 
 $(function() {
-    $('.profile-action button').click(function() {
+    $('#hidden-toggle').on('click', function() {
+        $('[data-toggle="popover"]').popover('hide');
+        $('#limit-reached').hide();
+    });
+
+    $('.profile-action button').on('click', function() {
         $(this).parent().hide();
         $(this).parent().siblings('.profile-message').fadeIn();
     });
 
-    $('.profile-message button').click(function() {
+    $('.profile-message button').on('click', function() {
         $('#limit-reached').fadeIn();
     });
 
-    $('.close-limit').click(function() {
+    $('#close-limit').on('click', function() {
         $('#limit-reached').fadeOut();
     });
 
-    $('.btn-close').click(function() {
+    $('.btn-close').on('click', function() {
         $(this).parent().parent().parent().remove();
+    });
+
+    $('[data-toggle="popover"]').popover({ content: $('#spotlight'), html: true, placement: 'top', animation: true});
+    $("[data-toggle='popover']").on('show.bs.popover', function(){
+        $('#spotlight').show();
     });
 });
 

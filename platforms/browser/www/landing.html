@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; media-src *">
+
+
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>hush</title>
+</head>
+
+<body>
+	<div class="header">
+		<h1 class="text-center">
+			<img src="img/logo.svg" alt="hush">
+		</h1>
+
+		<ul class="nav nav-tabs">
+			<li class="active">
+				<a data-toggle="tab" href="#available">Available</a>
+			</li>
+			<li>
+				<a id="hidden-toggle" data-toggle="tab" href="#hidden">Hidden</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="tab-content">
+		<div id="available" class="tab-pane fade in active">
+			<div class="profile-container">
+				<div class="profile">
+					<div class="profile-image">
+						<button type="button" class="btn-close">
+							<img src="img/close.svg" alt="close">
+						</button>
+
+						<img src="img/kate.png" alt="profile-pic">
+
+						<div class="profile-info">
+							<p class="profile-name">Kate</p>
+							<p class="profile-details">25 | 8 miles away</p>
+						</div>
+					</div>
+
+					<div class="profile-action">
+						<button type="button">
+							<img src="img/heart.svg" alt="choice 1">
+						</button type="button">
+
+						<button type="button">
+							<img src="img/light.svg" alt="choice 2">
+						</button type="button">
+					</div>
+
+					<div class="profile-message" hidden>
+						<button type="button">
+							<img src="img/message.svg" alt="message">
+							<span>Message Her</span>
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="profile-container">
+				<div class="profile">
+					<div class="profile-image">
+						<button type="button" class="btn-close">
+							<img src="img/close.svg" alt="close">
+						</button>
+
+						<img src="img/emma.png" alt="profile-pic">
+
+						<div class="profile-info">
+							<p class="profile-name">Emma</p>
+							<p class="profile-details">22 | 4 miles away</p>
+						</div>
+					</div>
+
+					<div class="profile-action">
+						<button type="button">
+							<img src="img/heart.svg" alt="choice 1">
+						</button type="button">
+
+						<button type="button">
+							<img src="img/light.svg" alt="choice 2">
+						</button type="button">
+					</div>
+
+					<div class="profile-message" hidden>
+						<button type="button">
+							<img src="img/message.svg" alt="message">
+							<span>Message Her</span>
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="profile-container">
+				<div class="profile">
+					<div class="profile-image profile-long">
+						<button type="button" class="btn-close">
+							<img src="img/close.svg" alt="close">
+						</button>
+
+						<img src="img/maria.png" alt="profile-pic">
+
+						<div class="profile-info">
+							<p class="profile-name">Maria</p>
+							<p class="profile-details">19 | 12 miles away</p>
+						</div>
+					</div>
+
+					<div class="profile-action">
+						<button type="button">
+							<img src="img/heart.svg" alt="choice 1">
+						</button type="button">
+
+						<button type="button">
+							<img src="img/light.svg" alt="choice 2">
+						</button type="button">
+					</div>
+
+					<div class="profile-message" hidden>
+						<button type="button">
+							<img src="img/message.svg" alt="message">
+							<span>Message Her</span>
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="profile-container">
+				<div class="profile">
+					<div class="profile-image profile-long">
+						<button type="button" class="btn-close">
+							<img src="img/close.svg" alt="close">
+						</button>
+
+						<img src="img/arianny.png" alt="profile-pic">
+
+						<div class="profile-info">
+							<p class="profile-name">Arianny</p>
+							<p class="profile-details">23 | 1 miles away</p>
+						</div>
+					</div>
+
+					<div class="profile-action">
+						<button type="button">
+							<img src="img/heart.svg" alt="choice 1">
+						</button type="button">
+
+						<button type="button">
+							<img src="img/light.svg" alt="choice 2">
+						</button type="button">
+					</div>
+
+					<div class="profile-message" hidden>
+						<button type="button">
+							<img src="img/message.svg" alt="message">
+							<span>Message Her</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="hidden" class="tab-pane fade">
+			<div class="hidden-overlay">
+				<div class="hidden-container">
+					<p>Right now, Hush is hiding from you:</p>
+
+					<p class="num-hidden">24</p>
+
+					<p>profiles according to your settings! Your privacy is our top concern</p>
+
+					<a href="settings.html" class="btn-lander btn-update">Update Settings</a>
+				</div>
+			</div>
+
+			<div class="hidden-filter">
+				<div class="profile-container">
+					<div class="profile">
+						<div class="profile-image">
+							<button type="button" class="btn-close">
+								<img src="img/close.svg" alt="close">
+							</button>
+
+							<img src="img/kate.png" alt="profile-pic">
+
+							<div class="profile-info">
+								<p class="profile-name">kate</p>
+								<p class="profile-details">22 | 4 miles away</p>
+							</div>
+						</div>
+
+						<div class="profile-action">
+							<button type="button">
+								<img src="img/heart.svg" alt="choice 1">
+							</button type="button">
+
+							<button type="button">
+								<img src="img/light.svg" alt="choice 2">
+							</button type="button">
+						</div>
+
+						<div class="profile-message" hidden>
+							<button type="button">
+								<img src="img/message.svg" alt="message">
+								<span>Message Her</span>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="profile-container">
+					<div class="profile">
+						<div class="profile-image profile-long">
+							<button type="button" class="btn-close">
+								<img src="img/close.svg" alt="close">
+							</button>
+
+							<img src="img/emma.png" alt="profile-pic">
+
+							<div class="profile-info">
+								<p class="profile-name">Emma</p>
+								<p class="profile-details">14 | 17 miles away</p>
+							</div>
+						</div>
+
+						<div class="profile-action">
+							<button type="button">
+								<img src="img/heart.svg" alt="choice 1">
+							</button type="button">
+
+							<button type="button">
+								<img src="img/light.svg" alt="choice 2">
+							</button type="button">
+						</div>
+
+						<div class="profile-message" hidden>
+							<button type="button">
+								<img src="img/message.svg" alt="message">
+								<span>Message Her</span>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="profile-container">
+					<div class="profile">
+						<div class="profile-image">
+							<button type="button" class="btn-close">
+								<img src="img/close.svg" alt="close">
+							</button>
+
+							<img src="img/maria.png" alt="profile-pic">
+
+							<div class="profile-info">
+								<p class="profile-name">Maria</p>
+								<p class="profile-details">22 | 4 miles away</p>
+							</div>
+						</div>
+
+						<div class="profile-action">
+							<button type="button">
+								<img src="img/heart.svg" alt="choice 1">
+							</button type="button">
+
+							<button type="button">
+								<img src="img/light.svg" alt="choice 2">
+							</button type="button">
+						</div>
+
+						<div class="profile-message" hidden>
+							<button type="button">
+								<img src="img/message.svg" alt="message">
+								<span>Message Her</span>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="profile-container">
+					<div class="profile">
+						<div class="profile-image profile-long">
+							<button type="button" class="btn-close">
+								<img src="img/close.svg" alt="close">
+							</button>
+
+							<img src="img/arianny.png" alt="profile-pic">
+
+							<div class="profile-info">
+								<p class="profile-name">Arianny</p>
+								<p class="profile-details">14 | 17 miles away</p>
+							</div>
+						</div>
+
+						<div class="profile-action">
+							<button type="button">
+								<img src="img/heart.svg" alt="choice 1">
+							</button type="button">
+
+							<button type="button">
+								<img src="img/light.svg" alt="choice 2">
+							</button type="button">
+						</div>
+
+						<div class="profile-message" hidden>
+							<button type="button">
+								<img src="img/message.svg" alt="message">
+								<span>Message Her</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="nav-container">
+		<div class="footer-nav">
+			<a href="landing.html">
+				<img src="img/home.svg" alt="home" width="20">
+			</a>
+			<a href="settings.html">
+				<img src="img/settings.svg" alt="settings" width="25">
+			</a>
+			<a href="javascript:void(0)" data-toggle="popover">
+				<img src="img/spotlight.svg" alt="spotlight" width="35">
+			</a>
+			<a href="javascript:void(0)">
+				<img src="img/messages.svg" alt="messages" width="35">
+			</a>
+			<!-- change to profile.html when ready -->
+			<a href="javascript:void(0)">
+				<img src="img/profile.svg" alt="profile" width="20">
+			</a>
+		</div>
+
+		<div id="spotlight" class="spotlight text-center" hidden>
+			<img src="img/spotlight-tooltip.svg" alt="spotlight" width="80">
+
+			<h2>Put Yourself in the Spotlight</h2>
+			<p>Put your profile to the top of the list & add a short note about yourself.</p>
+
+			<button type="button" class="btn-lander btn-unlim btn-spot">Put me in the spotlight</button>
+		</div>
+	</div>
+
+	<div id="limit-reached" class="limit-box" hidden>
+		<div class="limit-container">
+			<img src="img/infinity.svg" alt="infinity" width="45">
+
+			<p class="limit-text">You've reached your Daily Profile Allowance. You can view more profiles in 24 hours, or</p>
+
+			<button type="button" class="btn-lander btn-unlim">Go Unlimited</button>
+			<p id="close-limit" class="close-limit">I don't want unlimited</p>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

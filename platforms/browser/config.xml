@@ -8,12 +8,14 @@
     </feature>
     <name>hush</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        hush. FIND SOMEONE… NEW
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="james_lee82@hotmail.com" href="http://hush.com">
+        Jamie Lee
     </author>
     <content src="index.html" />
+    <icon src="www/img/icon.png" />
+    <splash src="www/img/splash.png" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />

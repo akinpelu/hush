@@ -52,7 +52,71 @@ h1 {
 }
 
 button {
+    background-color: transparent;
+    border: 0;
     letter-spacing: 0.6px;
+    outline: none;
+}
+
+.btn-lander {
+    padding: 10px 30px;
+    border: 0;
+    border-radius: 50px;
+    background-color: #00C0FF;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff;
+    outline: none;
+}
+
+.login-container {
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: #E01E33;
+    text-align: center;
+    color: #fff;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin-top: 17px;
+}
+
+.logo p {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.login {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    max-width: 280px;
+    margin: 0 auto;
+}
+
+.login p {
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+.btn-login {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px 0;
+    background-color: #405898;
+    font-size: 18px;
+    text-transform: capitalize;
 }
 
 .header {
@@ -65,8 +129,8 @@ button {
 
 .tab-content {
     width: 95%;
-    margin: 105px auto 10px;
-    padding-bottom: 30px;
+    margin: 0 auto;
+    padding: 105px 0 40px;
 }
 
 .tab-content > .active {
@@ -138,7 +202,8 @@ button {
     border: 0;
     background-color: #fff;
     outline: 0;
-    border-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .profile-action > button:first-child {
@@ -150,19 +215,10 @@ button {
 } */
 
 .profile-message button {
-    padding: 8px 0;
-}
-
-.btn-lander {
-    padding: 10px 30px;
-    border: 0;
-    border-radius: 50px;
-    background-color: #00C0FF;
-    font-size: 16px;
-    font-weight: 300;
-    text-transform: uppercase;
-    color: #fff;
-    outline: none;
+    /* padding: 8px 0; */
+    background-color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .limit-box,
@@ -184,7 +240,6 @@ button {
     top: 100px;
     z-index: 4;
     background-color: rgba(255,255,255,.8);
-
 }
 
 .hidden-container {
@@ -204,6 +259,7 @@ button {
 }
 
 .btn-update {
+    display: block;
     margin-top: 20px;
 }
 
@@ -216,17 +272,31 @@ button {
     width: 70%;
     max-width: 320px;
     margin: 0 auto;
-    padding: 20px 30px 30px;
+    padding: 30px 30px 20px;
     border-radius: 5px;
     background-color: #fff;
     text-align: center;
 }
 
-.btn-unlimited {
+.limit-container img {
+    width: 70px;
+    margin-bottom: 20px;
+}
+
+.close-limit {
+    margin-top: 5px;
+    font-size: 10px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.btn-unlim {
+    background: #E01E33;
     background: -webkit-gradient(linear, left top, right top, from(#DE1C33), to(#F4A723));
     background: -webkit-linear-gradient(left, #DE1C33, #F4A723);
     background: -o-linear-gradient(left, #DE1C33, #F4A723);
     background: linear-gradient(left, #DE1C33, #F4A723);
+    font-size: 14px;
 }
 
 .nav-container {
@@ -238,20 +308,44 @@ button {
     background-color: #fff;
 }
 
+.spotlight {
+    padding: 25px 0 40px;
+}
+
+.spotlight h2 {
+    margin: 25px 0;
+    font-weight: 300;
+}
+
+.spotlight p {
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+.btn-spot {
+    background: #E01E33;
+    background: -webkit-gradient(linear, left top, right top, from(#DE1C33), to(#F4A723));
+    background: -webkit-linear-gradient(left, #DE1C33, #F4A723);
+    background: -o-linear-gradient(left, #DE1C33, #F4A723);
+    background: linear-gradient(left, #DE1C33, #F4A723);
+    font-size: 15px;
+    min-width: 230px;
+    padding: 15px 0;
+}
+
 .footer-nav {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 7px 15px;
+    padding: 5px 0;
 }
 
 .event {
@@ -469,4 +563,3 @@ input:checked + .slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
-

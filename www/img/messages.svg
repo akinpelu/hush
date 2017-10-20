@@ -1,19 +1,23 @@
-<svg width="22px" height="19px" viewBox="0 0 22 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="39px" height="34px" viewBox="0 0 39 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-        <g id="Home" transform="translate(-207.000000, -392.000000)" stroke="#00C0FF">
-            <g id="2" transform="translate(185.000000, 136.000000)">
-                <g id="Message-Icon" transform="translate(23.000000, 256.000000)">
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="navigation-bar" transform="translate(-232.000000, -5.000000)">
+            <g id="Group-4" transform="translate(233.000000, 6.000000)">
+                <g id="Message-Icon" transform="translate(0.000000, 7.000000)" stroke-linecap="round" stroke-width="2" stroke="#00C0FF" stroke-linejoin="round">
                     <g id="Group-28">
-                        <path d="M16.9953956,0.8123875 C18.5253956,0.8123875 19.7646264,2.05161827 19.7646264,3.58161827 L19.7646264,11.8893106 C19.7646264,13.4193106 18.5253956,14.6585413 16.9953956,14.6585413 L15.6107802,14.6585413 L15.6107802,17.8305664 L11.4569341,14.6585413 L3.14924176,14.6585413 C1.61924176,14.6585413 0.380010986,13.4193106 0.380010986,11.8893106 L0.380010986,3.58161827 C0.380010986,2.05161827 1.61924176,0.8123875 3.14924176,0.8123875 L16.9953956,0.8123875 Z" id="Stroke-306" transform="translate(10.072319, 9.321477) scale(-1, 1) translate(-10.072319, -9.321477) "></path>
+                        <path d="M24,0 C26.21,0 28,1.82045149 28,4.06804803 L28,16.2721921 C28,18.5197887 26.21,20.3402402 24,20.3402402 L22,20.3402402 L22,25 L16,20.3402402 L4,20.3402402 C1.79,20.3402402 1.77635684e-14,18.5197887 1.77635684e-14,16.2721921 L1.77635684e-14,4.06804803 C1.77635684e-14,1.82045149 1.79,0 4,0 L24,0 Z" id="Stroke-306" transform="translate(14.000000, 12.500000) scale(-1, 1) translate(-14.000000, -12.500000) "></path>
                     </g>
-                    <g id="Group-32" transform="translate(4.000000, 4.500000)">
-                        <path d="M0,1 L12,1" id="Line"></path>
-                        <path d="M0,4 L6,4" id="Line"></path>
+                    <g id="Group-32" transform="translate(4.728395, 5.434783)">
+                        <path d="M0,1 L17.1851852,1" id="Line"></path>
+                        <path d="M0,5 L8.59259259,5" id="Line"></path>
                     </g>
                 </g>
+                <circle id="Oval-2" stroke="#F5F5F5" stroke-width="2" fill="#E01E33" cx="28" cy="9" r="9"></circle>
+                <text id="3" font-family=".AppleSystemUIFont" font-size="11" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="25" y="14">3</tspan>
+                </text>
             </g>
         </g>
     </g>
