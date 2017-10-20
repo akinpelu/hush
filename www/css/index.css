@@ -555,7 +555,7 @@ body.stealth__body {
     padding: 1em;
 }
 
-.stealth button {
+.stealth a {
     text-align: center;
     border-radius: 1.5em;
     width: 130px;
