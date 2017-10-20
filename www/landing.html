@@ -66,11 +66,11 @@
 
 						<div class="profile-action">
 							<button type="button">
-								<img src="img/heart.svg" alt="like">
+								<img src="img/arrow.svg" alt="love">
 							</button type="button">
 
 							<button type="button">
-								<img src="img/arrow.svg" alt="love">
+								<img src="img/heart.svg" alt="like">
 							</button type="button">
 						</div>
 
@@ -101,11 +101,11 @@
 
 						<div class="profile-action">
 							<button type="button">
-								<img src="img/heart.svg" alt="like">
+								<img src="img/arrow.svg" alt="love">
 							</button type="button">
 
 							<button type="button">
-								<img src="img/arrow.svg" alt="love">
+								<img src="img/heart.svg" alt="like">
 							</button type="button">
 						</div>
 
@@ -136,11 +136,11 @@
 
 						<div class="profile-action">
 							<button type="button">
-								<img src="img/heart.svg" alt="like">
+								<img src="img/arrow.svg" alt="love">
 							</button type="button">
 
 							<button type="button">
-								<img src="img/arrow.svg" alt="love">
+								<img src="img/heart.svg" alt="like">
 							</button type="button">
 						</div>
 
@@ -171,11 +171,11 @@
 
 						<div class="profile-action">
 							<button type="button">
-								<img src="img/heart.svg" alt="like">
+								<img src="img/arrow.svg" alt="love">
 							</button type="button">
 
 							<button type="button">
-								<img src="img/arrow.svg" alt="love">
+								<img src="img/heart.svg" alt="like">
 							</button type="button">
 						</div>
 
@@ -216,9 +216,10 @@
 			<img src="img/spotlight-tooltip.svg" alt="spotlight" width="80">
 
 			<h2>Put Yourself in the Spotlight</h2>
-			<p>Put your profile to the top of the list & add a short note about yourself.</p>
+			<p>Send your profile to all of your “likes”. Add a disappearing story about yourself.</p>
 
 			<button type="button" class="btn-lander btn-unlim btn-spot">Put me in the spotlight</button>
+			<a href="javascript:void(0)" id="toggle-spotlight" class="close-limit">No thanks, maybe later</a>
 		</div>
 	</div>
 
@@ -243,7 +244,6 @@
 			function loadProfiles() {
 				profiles.getProfiles().done(function(data) {
 					var colStart = Math.round(data.length / 2);
-					console.log(colStart);
 					$.each(data, function(k, v) {
 						var item = $('<div id="profile_'+k+'" class="profile-container">'+
 						'				<div class="profile">'+
@@ -259,15 +259,15 @@
 						'						</div>'+
 						'					</div>'+
 						'					<div class="profile-action">'+
-						'						<button type="button">'+
-						'							<img src="img/heart.svg" alt="like">'+
-						'						</button type="button">'+
-						'						<button type="button">'+
+						'						<button type="button" class="btn-arrow">'+
 						'							<img src="img/arrow.svg" alt="love">'+
+						'						</button type="button">'+
+						'						<button type="button" class="btn-heart">'+
+						'							<img src="img/heart.svg" alt="like">'+
 						'						</button type="button">'+
 						'					</div>'+
 						'					<div class="profile-message" hidden>'+
-						'						<button type="button">'+
+						'						<button type="button" class="btn-message">'+
 						'							<img src="img/message.svg" alt="message">'+
 						'							<span>Message Her</span>'+
 						'						</button>'+
@@ -284,9 +284,8 @@
 						}
 						
 						item.fadeIn(200, function() {
-							if (k==colStart) {
-								var img = item.find(".profile-image");
-								img.height(img.outerHeight()-25);
+							if (k == colStart) {
+								var img = item.find(".profile-image > img").attr('src', 'img/maria.png');
 							}
 						});
 					});
@@ -294,7 +293,13 @@
 			}
 		$(function() {	
 			loadProfiles();
+
+			$('#random-hidden').text(getRandomNum(1, 50));
 		});
+
+		function getRandomNum(min, max) {
+		  return Math.floor(Math.random() * (max - min) + min);
+		}
 	</script>
 </body>
 </html>

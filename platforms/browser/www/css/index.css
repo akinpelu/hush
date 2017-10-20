@@ -160,7 +160,7 @@ button {
 .tab-content {
     width: 95%;
     margin: 0 auto;
-    padding: 105px 0 40px;
+    padding: 105px 0 0;
 }
 
 .tab-content > .active {
@@ -181,8 +181,8 @@ button {
 
 .profile {
     position: relative;
-    border-radius: 5px;
     box-shadow: 0 0 5px #aaa;
+    border-radius: 5px;
 }
 
 .profile-image {
@@ -201,11 +201,13 @@ button {
 .profile-image > img {
     display: block;
     width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .btn-close {
     position: absolute;
-    right: 7px;
+    right: 2px;
 }
 
 .profile-info {
@@ -245,23 +247,72 @@ button {
     border: 0;
     background-color: #fff;
     outline: 0;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    transition: width 0.4s linear;
 }
 
 .profile-action > button:first-child {
     border-right: 1px solid #ddd;
+    border-bottom-left-radius: 5px;
 }
 
-/* .profile-action > button:last-child {
-    border-left: 1px solid #ddd;
-} */
+.profile-action > button:last-child {
+    border-bottom-right-radius: 5px;
+}
 
 .profile-message button {
     padding: 13px 0;
     background-color: #fff;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+}
+
+.btn-arrow.active-heart {
+    width: 100%;
+    border-bottom-right-radius: 5px;
+}
+
+.floating-heart {
+	position: relative;
+	-webkit-animation: spaceman-bounce 0.5s linear infinite;
+	-moz-animation: spaceman-bounce 0.5s linear infinite;
+	-ms-animation: spaceman-bounce 0.5s linear infinite;
+	-o-animation: spaceman-bounce 0.5s linear infinite;
+	animation: spaceman-bounce 0.5s linear infinite;
+}
+
+@-webkit-keyframes "spaceman-bounce" {
+	0% {
+		margin-left: 0;
+	}
+	25% {
+		margin-left: -20px;
+	}
+	50% {
+		margin-left: 0;
+	}
+	75% {
+		margin-left: 20px;
+	}
+	100% {
+		margin-left: 0;
+	}
+}
+@keyframes "spaceman-bounce" {
+	0% {
+		margin-left: 0;
+	}
+	25% {
+		margin-left: -20px;
+	}
+	50% {
+		margin-left: 0;
+	}
+	75% {
+		margin-left: 20px;
+	}
+	100% {
+		margin-left: 0;
+	}
 }
 
 .limit-box,
@@ -305,6 +356,12 @@ button {
 .btn-update {
     display: block;
     margin-top: 20px;
+}
+
+.limit-blur {
+    filter: blur(5px) brightness(70%);
+    pointer-events: none;
+    cursor: not-allowed;
 }
 
 .limit-container {
@@ -793,4 +850,4 @@ input:checked + .slider:before {
     height: 2px;
     margin: 0;
     border: 0;
-}   
+}

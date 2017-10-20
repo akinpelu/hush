@@ -49,18 +49,44 @@ var app = {
 };
 
 $(function() {
+    var lastScrollTop = 0;
+    $(window).on("scroll.limitScroll", function(e){
+        var pos = $(window).scrollTop() + 500;
+        var profiles = $('#available .profile-container').length;
+        var midPro = $('#profile_' + Math.round(profiles / 2));
+        var nextPro = $('#profile_' + (Math.round(profiles / 2) + 1));
+
+        if (pos >= $('#profile_2').offset().top && pos > lastScrollTop) {
+            $('#limit-reached').fadeIn();
+            $('#profile_1').nextUntil(midPro).find('.profile').addClass('limit-blur');
+            $(nextPro).nextAll().find('.profile').addClass('limit-blur');
+        }
+        lastScrollTop = pos;
+    });
+
     $(document).on('click', '#hidden-toggle, #toggle-spotlight', function() {
         $('[data-toggle="popover"]').popover('hide');
         $('#limit-reached').hide();
     });
 
-    $(document).on('click', '.profile-action button', function() {
-        $(this).parent().hide();
-        $(this).parent().siblings('.profile-message').fadeIn();
+    $(document).on('click', '.btn-heart', function() {
+        var self = this;
+        $(this).find('img').addClass('floating-heart').animate({
+            bottom: "+=80"
+        }, 1500, function() {
+            $(self).hide();
+            $(self).siblings().addClass('active-heart');
+        });
     });
 
-    $(document).on('click', '.profile-message button', function() {
-        $('#limit-reached').fadeIn();
+    $(document).on('click', '.btn-arrow', function() {
+        // setTimeout(function() {
+        //     $(this).parent().siblings('.profile-image').find('.btn-close').click();
+        // }, 1000);
+    });
+
+    $(document).on('click', '.btn-message', function() {
+        
     });
 
     $(document).on('click', '#close-limit', function() {
