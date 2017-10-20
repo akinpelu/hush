@@ -258,3 +258,35 @@ var stealth = {
         });
     }
 };
+
+
+
+$( "#slider-distance-fb" ).slider({
+     range: "min",
+  min: 0,
+  max: 50,
+  value: 10,
+  slide: function( event, ui ) {
+    $( ".settings__privacy-ranger > span" ).text( ui.value );
+  }
+});
+
+$( "#slider-distance" ).slider({
+    range: "min",
+  min: 0,
+  max: 50,
+  value: 25,
+  slide: function( event, ui ) {
+    $( "#distance-value" ).text( ui.value + 'km' );
+  }
+});
+
+$( "#slider-age" ).slider({
+  range: true,
+  min: 18,
+  max: 90,
+  values: [ 18, 39 ],
+  slide: function( event, ui ) {
+    $( "#age-values" ).text( ui.values[ 0 ] + "-" + ui.values[ 1 ] );
+  }
+});
