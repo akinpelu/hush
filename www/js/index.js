@@ -289,3 +289,98 @@ var stealth = {
         });
     }
 };
+
+// Settings
+if($('.ranger').length ){
+    $( "#slider-distance-fb" ).slider({
+         range: "min",
+      min: 0,
+      max: 50,
+      value: 10,
+      slide: function( event, ui ) {
+        $( ".settings__privacy-ranger > span" ).text( ui.value );
+      }
+    });
+
+    $( "#slider-distance" ).slider({
+        range: "min",
+      min: 0,
+      max: 50,
+      value: 25,
+      slide: function( event, ui ) {
+        $( "#distance-value" ).text( ui.value + 'km' );
+      }
+    });
+
+    $( "#slider-age" ).slider({
+      range: true,
+      min: 18,
+      max: 90,
+      values: [ 18, 39 ],
+      slide: function( event, ui ) {
+        $( "#age-values" ).text( ui.values[ 0 ] + "-" + ui.values[ 1 ] );
+      }
+    });
+}
+
+// Chat
+$('#input-msg').on('keypress', function(e){
+    if(e.keyCode === 13){
+        e.preventDefault();
+        var $this = $(this),
+            val = $this.val();
+
+        postUserMsg(val, $this);
+
+        setTimeout(function(){
+            getResponse();
+        }, (Math.floor(Math.random() * 6) + 1) * 1000);
+    } 
+})
+
+$('#send-msg').on('click', function(){
+    var $this = $(this),
+        parent = $this.parent(),
+        input = parent.find('input'),
+        val = input.val();
+
+    postUserMsg(val, input);
+
+    setTimeout(function(){
+        getResponse();
+    }, (Math.floor(Math.random() * 6) + 1) * 1000 );
+})
+
+function postUserMsg(val, input){
+    if(val !== ''){
+        $('.chat__list').append('<li class="chat__list__item chat__list__item--user">'
+            +'<div class="chat__message">'
+               +'<div class="chat__bubble">'
+                   + '<span class="chat__text">'+val+'</span>'
+                +'</div>'
+            +'</div>'
+        +'</li>');
+
+        input.val('');
+
+        $("html, body").animate({ scrollTop: $(document).height() }, 0);
+    }
+}
+
+function getResponse(){
+    $.ajax({
+      method: "POST",
+      url: 'https://e2wablxu2b.execute-api.us-east-1.amazonaws.com/development/chat/1'
+    }).done(function(response) {
+      $('.chat__list').append('<li class="chat__list__item chat__list__item--girl">'
+            +'<div class="chat__image"><img src="img/maria-chat-2.png" alt=""></div>'
+            +'<div class="chat__message">'
+               +'<div class="chat__bubble">'
+                   + '<span class="chat__text">'+response.text+'</span>'
+                +'</div>'
+            +'</div>'
+        +'</li>');
+
+        $("html, body").animate({ scrollTop: $(document).height() }, 0);
+    });
+}
