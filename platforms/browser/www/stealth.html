@@ -73,6 +73,11 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.min.js"></script>
     <script type="text/javascript">
         stealth.initialize();
+
+        // preload
+        for (i = 1; i < 31; i++) { 
+            $('<img/>')[0].src = "https://e2wablxu2b.execute-api.us-east-1.amazonaws.com/development//assets/img/"+i+"/avatar504.jpg";
+        }
     </script>
 </body>
 
