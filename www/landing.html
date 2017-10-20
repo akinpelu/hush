@@ -33,141 +33,6 @@
 
 	<div class="tab-content">
 		<div id="available" class="tab-pane fade in active">
-			<div class="profile-container">
-				<div class="profile">
-					<div class="profile-image">
-						<button type="button" class="btn-close">
-							<img src="img/close.svg" alt="close">
-						</button>
-
-						<img src="img/kate.png" alt="profile-pic">
-
-						<div class="profile-info">
-							<p class="profile-name">Kate</p>
-							<p class="profile-details">25 | 8 miles away</p>
-						</div>
-					</div>
-
-					<div class="profile-action">
-						<button type="button">
-							<img src="img/heart.svg" alt="choice 1">
-						</button type="button">
-
-						<button type="button">
-							<img src="img/light.svg" alt="choice 2">
-						</button type="button">
-					</div>
-
-					<div class="profile-message" hidden>
-						<button type="button">
-							<img src="img/message.svg" alt="message">
-							<span>Message Her</span>
-						</button>
-					</div>
-				</div>
-			</div>
-
-			<div class="profile-container">
-				<div class="profile">
-					<div class="profile-image">
-						<button type="button" class="btn-close">
-							<img src="img/close.svg" alt="close">
-						</button>
-
-						<img src="img/emma.png" alt="profile-pic">
-
-						<div class="profile-info">
-							<p class="profile-name">Emma</p>
-							<p class="profile-details">22 | 4 miles away</p>
-						</div>
-					</div>
-
-					<div class="profile-action">
-						<button type="button">
-							<img src="img/heart.svg" alt="choice 1">
-						</button type="button">
-
-						<button type="button">
-							<img src="img/light.svg" alt="choice 2">
-						</button type="button">
-					</div>
-
-					<div class="profile-message" hidden>
-						<button type="button">
-							<img src="img/message.svg" alt="message">
-							<span>Message Her</span>
-						</button>
-					</div>
-				</div>
-			</div>
-
-			<div class="profile-container">
-				<div class="profile">
-					<div class="profile-image profile-long">
-						<button type="button" class="btn-close">
-							<img src="img/close.svg" alt="close">
-						</button>
-
-						<img src="img/maria.png" alt="profile-pic">
-
-						<div class="profile-info">
-							<p class="profile-name">Maria</p>
-							<p class="profile-details">19 | 12 miles away</p>
-						</div>
-					</div>
-
-					<div class="profile-action">
-						<button type="button">
-							<img src="img/heart.svg" alt="choice 1">
-						</button type="button">
-
-						<button type="button">
-							<img src="img/light.svg" alt="choice 2">
-						</button type="button">
-					</div>
-
-					<div class="profile-message" hidden>
-						<button type="button">
-							<img src="img/message.svg" alt="message">
-							<span>Message Her</span>
-						</button>
-					</div>
-				</div>
-			</div>
-
-			<div class="profile-container">
-				<div class="profile">
-					<div class="profile-image profile-long">
-						<button type="button" class="btn-close">
-							<img src="img/close.svg" alt="close">
-						</button>
-
-						<img src="img/arianny.png" alt="profile-pic">
-
-						<div class="profile-info">
-							<p class="profile-name">Arianny</p>
-							<p class="profile-details">23 | 1 miles away</p>
-						</div>
-					</div>
-
-					<div class="profile-action">
-						<button type="button">
-							<img src="img/heart.svg" alt="choice 1">
-						</button type="button">
-
-						<button type="button">
-							<img src="img/light.svg" alt="choice 2">
-						</button type="button">
-					</div>
-
-					<div class="profile-message" hidden>
-						<button type="button">
-							<img src="img/message.svg" alt="message">
-							<span>Message Her</span>
-						</button>
-					</div>
-				</div>
-			</div>
 		</div>
 
 		<div id="hidden" class="tab-pane fade">
@@ -367,5 +232,70 @@
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/profiles.js"></script>
+
+	<script type="text/javascript">
+		var profiles = new Profiles();
+			function loadProfiles() {
+					profiles.getProfiles().done(function(data) {
+						var colStart = data.length/2;
+						$.each(data, function(k, v) {
+							var item = $('<div id="profile_'+k+'" class="profile-container">'+
+									'				<div class="profile">'+
+									'					<div class="profile-image">'+
+									'						<button type="button" class="btn-close">'+
+									'							<img src="img/close.svg" alt="close">'+
+									'						</button>'+
+									'						<img src="https://e2wablxu2b.execute-api.us-east-1.amazonaws.com/development/'+v.user.avatar+'" alt="profile-pic">'+
+									'						<div class="profile-info">'+
+									'							<p class="profile-name">'+v.user.screen_name+'</p>'+
+									'							<p class="profile-details">'+v.user.age+' | '+v.context.distance+'</p>'+
+									'						</div>'+
+									'					</div>'+
+									'					<div class="profile-action">'+
+									'						<button type="button">'+
+									'							<img src="img/heart.svg" alt="choice 1">'+
+									'						</button type="button">'+
+									'						<button type="button">'+
+									'							<img src="img/light.svg" alt="choice 2">'+
+									'						</button type="button">'+
+									'					</div>'+
+									'					<div class="profile-message" hidden>'+
+									'						<button type="button">'+
+									'							<img src="img/message.svg" alt="message">'+
+									'							<span>Message Her</span>'+
+									'						</button>'+
+									'					</div>'+
+									'				</div>'+
+									'			</div>').hide();
+									
+		
+							$('#available').append(item);
+													
+							if (v.context.match) {
+								item.find(".profile-action").hide();
+								item.find(".profile-message").show();
+							}
+							
+							item.fadeIn(200, function() {
+    							if (k==colStart) {
+									var img = item.find(".profile-image");
+									img.height(img.outerHeight()-25);
+								}
+							});
+
+
+
+						});
+				});
+			}
+		$(function() {	
+			loadProfiles();
+		});
+	</script>
+
+
 </body>
 </html>
+
+
