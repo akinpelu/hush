@@ -8,6 +8,7 @@
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
     <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; media-src *">
 
+
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
@@ -31,10 +32,6 @@
 	</div>
 
 	<div class="tab-content">
-		<div id="hide-loader" class="text-center">
-			<img src="img/loader.svg" alt="Loading..." width="30">
-		</div>
-
 		<div id="available" class="tab-pane fade in active"></div>
 
 		<div id="hidden" class="tab-pane fade">
@@ -275,6 +272,7 @@
 						'					</div>'+
 						'				</div>'+
 						'			</div>').hide();
+								
 	
 						$('#available').append(item);
 												
@@ -287,8 +285,6 @@
 							if (k == colStart) {
 								var img = item.find(".profile-image > img").attr('src', 'img/maria.png');
 							}
-
-							$('#hide-loader').hide();
 						});
 					});
 				});
