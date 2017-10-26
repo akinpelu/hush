@@ -1,0 +1,29 @@
+<svg width="37px" height="37px" viewBox="0 0 37 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="navigation-bar" transform="translate(-163.000000, -6.000000)">
+            <g id="Group-5" transform="translate(163.000000, 6.000000)">
+                <g id="Page-1" fill="#E01E33">
+                    <path d="M37,18.5 C37,28.7174412 28.7174412,37 18.5,37 C8.28255882,37 0,28.7174412 0,18.5 C0,8.28255882 8.28255882,0 18.5,0 C28.7174412,0 37,8.28255882 37,18.5 Z" id="Stroke-1"></path>
+                </g>
+                <g id="Group-2" transform="translate(7.000000, 9.000000)" stroke="#FFFFFF">
+                    <g id="Group" transform="translate(20.476454, 2.281549) rotate(29.000000) translate(-20.476454, -2.281549) translate(18.476454, 0.781549)">
+                        <path d="M1.39285714,-0.5 L2.60714286,-0.5 C3.02135642,-0.5 3.35714286,-0.164213562 3.35714286,0.25 L3.35714286,2 L0.642857143,2 L0.642857143,0.25 C0.642857143,-0.164213562 0.97864358,-0.5 1.39285714,-0.5 Z" id="Rectangle"></path>
+                        <path d="M2.9839109,1.5 L3.91869472,2.1271976 C4.26265899,2.35798204 4.35440937,2.82390793 4.12362493,3.1678722 C3.98434658,3.37545453 3.7508003,3.5 3.50082253,3.5 L0.672192121,3.5 C0.257978558,3.5 -0.0778078792,3.16421356 -0.0778078792,2.75 C-0.0778078792,2.50002223 0.0467375866,2.26647595 0.254319926,2.1271976 L1.18910375,1.5 L2.9839109,1.5 Z" id="Combined-Shape"></path>
+                    </g>
+                    <ellipse id="Oval-3" cx="11.5" cy="18.5" rx="6.5" ry="2.5"></ellipse>
+                    <path d="M5.5,17.5 L19,4" id="Line-2" stroke-linecap="square"></path>
+                    <path d="M18,18 L20,5" id="Line-3" stroke-linecap="square"></path>
+                    <g id="Group" transform="translate(2.476454, 2.281549) scale(-1, 1) rotate(29.000000) translate(-2.476454, -2.281549) translate(0.476454, 0.781549)">
+                        <path d="M1.39285714,-0.5 L2.60714286,-0.5 C3.02135642,-0.5 3.35714286,-0.164213562 3.35714286,0.25 L3.35714286,2 L0.642857143,2 L0.642857143,0.25 C0.642857143,-0.164213562 0.97864358,-0.5 1.39285714,-0.5 Z" id="Rectangle"></path>
+                        <path d="M2.9839109,1.5 L3.91869472,2.1271976 C4.26265899,2.35798204 4.35440937,2.82390793 4.12362493,3.1678722 C3.98434658,3.37545453 3.7508003,3.5 3.50082253,3.5 L0.672192121,3.5 C0.257978558,3.5 -0.0778078792,3.16421356 -0.0778078792,2.75 C-0.0778078792,2.50002223 0.0467375866,2.26647595 0.254319926,2.1271976 L1.18910375,1.5 L2.9839109,1.5 Z" id="Combined-Shape"></path>
+                    </g>
+                    <path d="M4,17.5 L17.5,4" id="Line-2" stroke-linecap="square" transform="translate(10.750000, 10.750000) scale(-1, 1) translate(-10.750000, -10.750000) "></path>
+                    <path d="M3,18 L5,5" id="Line-3" stroke-linecap="square" transform="translate(4.000000, 11.500000) scale(-1, 1) translate(-4.000000, -11.500000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

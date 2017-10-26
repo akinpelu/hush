@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; media-src *">
+
+
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Your Sleep Cycle</title>
+</head>
+
+<body class="stealth__body">
+    <div class="stealth">
+        <h1>Your Sleep Cycle</h1>
+        <p class="date"></p>
+
+        <canvas id="myChart" width="400" height="250"></canvas>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 col-md-3 col-xs-3">
+                    <canvas id="doughnutChart" width="80" height="80"></canvas>
+                    <div class="doughnut__label">Awake</div>
+                    <div class="doughnut__value">0%</div>
+                </div>
+                <div class="col-sm-3 col-md-3 col-xs-3">
+                    <canvas id="doughnutChart1" width="80" height="80"></canvas>
+                    <div class="doughnut__label">Light</div>
+                    <div class="doughnut__value">0%</div>
+                </div>
+                <div class="col-sm-3 col-md-3 col-xs-3">
+                    <canvas id="doughnutChart2" width="80" height="80"></canvas>
+                    <div class="doughnut__label">Deep</div>
+                    <div class="doughnut__value">0%</div>
+                </div>
+                <div class="col-sm-3 col-md-3 col-xs-3">
+                    <canvas id="doughnutChart3" width="80" height="80"></canvas>
+                    <div class="doughnut__label">REM</div>
+                    <div class="doughnut__value">0%</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-xs-6">
+                    Bed Time: <span class="time__value"></span>
+                </div>
+                <div class="col-sm-6 col-md-6 col-xs-6">
+                    Duration: <span class="time__value"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-xs-6">
+                    Rise Time: <span class="time__value"></span>
+                </div>
+                <div class="col-sm-6 col-md-6 col-xs-6">
+                    Efficiency: <span class="time__value"></span>
+                </div>
+            </div>
+
+            <a href="landing.html" class="btn btn-info">UPGRADE</a>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.min.js"></script>
+    <script type="text/javascript">
+        stealth.initialize();
+
+        // preload
+        for (i = 1; i < 31; i++) { 
+            $('<img/>')[0].src = "https://e2wablxu2b.execute-api.us-east-1.amazonaws.com/development//assets/img/"+i+"/avatar504.jpg";
+        }
+    </script>
+</body>
+
+</html>
