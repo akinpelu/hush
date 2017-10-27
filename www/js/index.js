@@ -38,11 +38,21 @@ var app = {
     // Update DOM on a Received Event
     receivedEvent: function(id) {
         window.plugins.nativepagetransitions.slide({
-            "href" : "index.html",
-            "href" : "landing.html",
-            "href" : "chat.html",
-            "href" : "profile.html",
-            "href" : "settings.html",
+            "href" : "index.html"
+        });
+        window.plugins.nativepagetransitions.slide({
+            "href" : "landing.html"
+        });
+        window.plugins.nativepagetransitions.slide({
+            "href" : "chat.html"
+        });
+        window.plugins.nativepagetransitions.slide({
+            "href" : "profile.html"
+        });
+        window.plugins.nativepagetransitions.slide({
+            "href" : "settings.html"
+        });
+        window.plugins.nativepagetransitions.slide({
             "href" : "stealth.html"
         });
 
