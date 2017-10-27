@@ -37,22 +37,45 @@ var app = {
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-        window.plugins.nativepagetransitions.slide({
-            "href" : "chat.html"
-        });
-        window.plugins.nativepagetransitions.slide({
-            "href" : "profile.html"
-        });
-        window.plugins.nativepagetransitions.slide({
-            "href" : "settings.html"
-        });
-        window.plugins.nativepagetransitions.slide({
-            "href" : "stealth.html"
-        });
-
         console.log('Received Event: ' + id);
     }
 };
+
+$(document).on('click', '.btn-login', function(event) {
+    window.plugins.nativepagetransitions.slide({
+        "href" : "stealth.html"
+    });
+});
+
+$(document).on('click', '.btn-logout', function(event) {
+    window.plugins.nativepagetransitions.slide({
+        "href" : "index.html"
+    });
+});
+
+$(document).on('click', '.btn-lander', function() {
+    window.plugins.nativepagetransitions.slide({
+        "href" : "landing.html"
+    });
+});
+
+$(document).on('click', '.btn-settings', function() {
+    window.plugins.nativepagetransitions.slide({
+        "href" : "settings.html"
+    });
+});
+
+$(document).on('click', '.btn-chat', function() {
+    window.plugins.nativepagetransitions.slide({
+        "href" : "chat.html"
+    });
+});
+
+$(document).on('click', '.btn-profile', function() {
+    window.plugins.nativepagetransitions.slide({
+        "href" : "profile.html"
+    });
+});
 
 $(function() {
     var lastScrollTop = 0;
@@ -70,42 +93,6 @@ $(function() {
             }
             lastScrollTop = pos;
         }
-    });
-
-    $(document).on('click', '.btn-login', function(event) {
-        window.plugins.nativepagetransitions.slide({
-            "href" : "stealth.html"
-        });
-    });
-
-    $(document).on('click', '.btn-logout', function(event) {
-        window.plugins.nativepagetransitions.slide({
-            "href" : "index.html"
-        });
-    });
-
-    $(document).on('click', '.btn-lander', function() {
-        window.plugins.nativepagetransitions.slide({
-            "href" : "lander.html"
-        });
-    });
-
-    $(document).on('click', '.btn-settings', function() {
-        window.plugins.nativepagetransitions.slide({
-            "href" : "settings.html"
-        });
-    });
-
-    $(document).on('click', '.btn-chat', function() {
-        window.plugins.nativepagetransitions.slide({
-            "href" : "chat.html"
-        });
-    });
-
-    $(document).on('click', '.btn-profile', function() {
-        window.plugins.nativepagetransitions.slide({
-            "href" : "profile.html"
-        });
     });
 
     $(document).on('click', '#hidden-toggle', function() {
