@@ -74,6 +74,8 @@
         Jamie Lee
     </author>
     <content src="index.html" />
+    <icon src="www/img/icon.png" />
+    <splash src="www/img/splash.png" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
