@@ -41,38 +41,38 @@ var app = {
     }
 };
 
-$(document).on('click', '.btn-login', function(event) {
-    window.plugins.nativepagetransitions.flip({
+$(document).on('click', '.btn-stealth', function(event) {
+    window.plugins.nativepagetransitions.fade({
         "href" : "stealth.html"
     });
 });
 
 $(document).on('click', '.btn-logout', function(event) {
-    window.plugins.nativepagetransitions.flip({
+    window.plugins.nativepagetransitions.fade({
         "href" : "index.html"
     });
 });
 
 $(document).on('click', '.to-lander', function() {
-    window.plugins.nativepagetransitions.flip({
+    window.plugins.nativepagetransitions.fade({
         "href" : "landing.html"
     });
 });
 
 $(document).on('click', '.btn-settings', function() {
-    window.plugins.nativepagetransitions.flip({
+    window.plugins.nativepagetransitions.fade({
         "href" : "settings.html"
     });
 });
 
 $(document).on('click', '.btn-chat', function() {
-    window.plugins.nativepagetransitions.flip({
+    window.plugins.nativepagetransitions.fade({
         "href" : "chat.html"
     });
 });
 
 $(document).on('click', '.btn-profile', function() {
-    window.plugins.nativepagetransitions.flip({
+    window.plugins.nativepagetransitions.fade({
         "href" : "profile.html"
     });
 });
